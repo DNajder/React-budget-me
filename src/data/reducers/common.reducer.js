@@ -5,14 +5,6 @@ const initialState = {
   allCategories: [],
 }
 
-// action = {
-//   type: "BUDGET_FETCHED",
-//   payload: {
-//     id: 1,
-//   },
-// }
-
-
 function common(state = initialState, action) {
   const newLoadingState = {...state.loadingState};
 
@@ -29,7 +21,7 @@ function common(state = initialState, action) {
       delete newLoadingState.ALL_CATEGORIES_GET_REQUEST;
 
       return {
-        ... state,
+        ...state,
         allCategories:action.payload,
         loadingState: newLoadingState,
       }
@@ -37,7 +29,7 @@ function common(state = initialState, action) {
       delete newLoadingState.ALL_CATEGORIES_GET_REQUEST;
 
       return {
-        ... state,
+        ...state,
         allCategories: [],
         loadingState: newLoadingState,
       }
