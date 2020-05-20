@@ -1,6 +1,5 @@
 import {
   LOADING_STATES,
-  BUDGET_GET,
   BUDGET_GET_REQUEST,
   BUDGET_GET_SUCCESS,
   BUDGET_GET_FAILURE,
@@ -10,14 +9,13 @@ import {
 } from 'data/constans';
 
 const initialState = {
-  loadingState: {},
+  loadingState: null,
   budget: {},
   budgetedCategories: [],
 }
 
 function budget(state = initialState, action) {
   const newLoadingState = {...state.loadingState};
-  // console.log(newLoadingState)
 
   switch (action.type) {
     case BUDGET_GET_REQUEST:

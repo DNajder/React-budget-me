@@ -1,7 +1,12 @@
-import {LOADING_STATES, ALL_CATEGORIES_GET,ALL_CATEGORIES_GET_FAILURE,ALL_CATEGORIES_GET_REQUEST,ALL_CATEGORIES_GET_SUCCESS} from 'data/constans';
+import {
+  LOADING_STATES,
+  ALL_CATEGORIES_GET_FAILURE,
+  ALL_CATEGORIES_GET_REQUEST,
+  ALL_CATEGORIES_GET_SUCCESS,
+} from 'data/constans';
 
 const initialState = {
-  loadingState: {},
+  loadingState: null,
   allCategories: [],
 }
 
